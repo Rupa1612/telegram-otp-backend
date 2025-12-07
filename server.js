@@ -6,6 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Telegram OTP backend is running ✅");
+});
+
+
 // Replace with your bot token
 const BOT_TOKEN = "8396360184:AAGFbcgYHv0t8iHnyNW3HQvFa_Eajd0wPxM";
 
